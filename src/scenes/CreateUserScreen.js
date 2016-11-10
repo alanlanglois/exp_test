@@ -42,8 +42,10 @@ export default class CreateUserScreen extends Component {
   checkValid(){
     let isValid = true;
     for(let i = 0 ; i < this.state.tiEmpty.length ; i++ ){
-      if( this.state.tiEmpty[{i}] ) isValid = false;
-      break;
+      if( this.state.tiEmpty[i] ) {
+        isValid = false;
+        break;
+      }
     }
     console.log( ">>>> " + isValid );
 
